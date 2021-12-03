@@ -1,0 +1,33 @@
+alla@alla-Latitude-5480:~$ mkdir cursor_git_hw
+alla@alla-Latitude-5480:~$ cd cursor_git_hw/
+alla@alla-Latitude-5480:~/cursor_git_hw$ git init
+alla@alla-Latitude-5480:~/cursor_git_hw$ touch first.txt
+alla@alla-Latitude-5480:~/cursor_git_hw$ git add first.txt
+alla@alla-Latitude-5480:~/cursor_git_hw$ git commit -m 'adding first.txt'
+alla@alla-Latitude-5480:~/cursor_git_hw$ git log
+alla@alla-Latitude-5480:~/cursor_git_hw$ touch second.txt
+alla@alla-Latitude-5480:~/cursor_git_hw$ git add second.txt
+alla@alla-Latitude-5480:~/cursor_git_hw$ git commit -m 'adding second.txt'
+alla@alla-Latitude-5480:~/cursor_git_hw$ rm first.txt
+alla@alla-Latitude-5480:~/cursor_git_hw$ git add first.txt
+alla@alla-Latitude-5480:~/cursor_git_hw$ git commit -m 'remove first.txt'
+alla@alla-Latitude-5480:~/cursor_git_hw$ git log
+alla@alla-Latitude-5480:~/cursor_git_hw$ git push --set-upstream git@github.com:AllaKopus/Git_Intro.git master
+alla@alla-Latitude-5480:~/cursor_git_hw$ git branch first
+alla@alla-Latitude-5480:~/cursor_git_hw$ git checkout -b second
+alla@alla-Latitude-5480:~/cursor_git_hw$ subl second.txt
+alla@alla-Latitude-5480:~/cursor_git_hw$ git status
+alla@alla-Latitude-5480:~/cursor_git_hw$ git add second.txt
+alla@alla-Latitude-5480:~/cursor_git_hw$ git commit -m 'Changing second.txt'
+alla@alla-Latitude-5480:~/cursor_git_hw$ git push --set-upstream git@github.com:AllaKopus/Git_Intro.git first
+alla@alla-Latitude-5480:~/cursor_git_hw$ git checkout first
+alla@alla-Latitude-5480:~/cursor_git_hw$ subl second.txt
+alla@alla-Latitude-5480:~/cursor_git_hw$ git add second.txt
+alla@alla-Latitude-5480:~/cursor_git_hw$ git push --set-upstream git@github.com:AllaKopus/Git_Intro.git second
+alla@alla-Latitude-5480:~/cursor_git_hw$ git checkout master
+alla@alla-Latitude-5480:~/cursor_git_hw$ git merge second
+alla@alla-Latitude-5480:~/cursor_git_hw$ git merge first
+alla@alla-Latitude-5480:~/cursor_git_hw$ subl second.txt
+alla@alla-Latitude-5480:~/cursor_git_hw$ git add second.txt
+alla@alla-Latitude-5480:~/cursor_git_hw$ git commit -m 'second.txt'
+alla@alla-Latitude-5480:~/cursor_git_hw$ git push
